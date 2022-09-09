@@ -1,0 +1,108 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
+SETUVAR FZF_DISABLE_KEYBINDINGS:0
+SETUVAR FZF_LEGACY_KEYBINDINGS:1
+SETUVAR FZF_PREVIEW_DIR_CMD:ls
+SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
+SETUVAR FZF_TMUX_HEIGHT:40\x25
+SETUVAR __done_exclude:\x28git\x20\x28\x3f\x21push\x7cpull\x7cfetch\x29\x7csudoedit\x7cemacsclient\x29
+SETUVAR __fish_initialized:3400
+SETUVAR --export _fifc_comp_1:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22files\x22\x1e\x1e\x1e\x1e_fifc_source_files\x1e\x1e
+SETUVAR --export _fifc_comp_10:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x1e\x1e\x1e\x1eps\x20\x2dax\x20\x2do\x20pid\x3d\x2ccommand\x3d\x1e\x1e
+SETUVAR --export _fifc_comp_11:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22options\x22\x1e\x1e_fifc_preview_opt\x1e_fifc_open_opt\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_12:test\x20\x5c\x28\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x20\x5c\x29\x3b\x20and\x20type\x20\x2dq\x20\x2df\x20\x2d\x2d\x20\x22\x24fifc_candidate\x22\x1e\x5e\x28\x3f\x21\x5cw\x2b\x5ch\x2b\x29\x1e_fifc_preview_cmd\x1e_fifc_open_cmd\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_13:\x1d
+SETUVAR --export _fifc_comp_14:\x1d
+SETUVAR --export _fifc_comp_15:test\x20\x2dd\x20\x22\x24fifc_candidate\x22\x1e\x1e_fifc_preview_dir\x1e_fifc_open_dir\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_16:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x20\x2da\x20\x28ps\x20\x2dp\x20\x28_fifc_parse_pid\x20\x22\x24fifc_candidate\x22\x29\x20\x26\x3e/dev/null\x29\x1e\x1e_fifc_preview_process\x1e_fifc_open_process\x1e\x1e\x1e\x5e\x5ch\x2a\x28\x5b0\x2d9\x5d\x2b\x29
+SETUVAR --export _fifc_comp_17:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22files\x22\x1etest\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22files\x22\x1e\x1e\x1e\x1e_fifc_source_files\x1e\x1e
+SETUVAR --export _fifc_comp_18:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x1e\x1e\x1e\x1eps\x20\x2dax\x20\x2do\x20pid\x3d\x2ccommand\x3d\x1e\x1e
+SETUVAR --export _fifc_comp_19:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22options\x22\x1e\x1e_fifc_preview_opt\x1e_fifc_open_opt\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_2:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x1e\x1e\x1e\x1eps\x20\x2dax\x20\x2do\x20pid\x3d\x2ccommand\x3d\x1e\x1e
+SETUVAR --export _fifc_comp_20:test\x20\x5c\x28\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x20\x5c\x29\x3b\x20and\x20type\x20\x2dq\x20\x2df\x20\x2d\x2d\x20\x22\x24fifc_candidate\x22\x1e\x5e\x28\x3f\x21\x5cw\x2b\x5ch\x2b\x29\x1e_fifc_preview_cmd\x1e_fifc_open_cmd\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_21:test\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x1e\x5e\x28functions\x29\x3f\x5ch\x2b\x1e_fifc_preview_fn\x1e_fifc_open_fn\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_22:test\x20\x2df\x20\x22\x24fifc_candidate\x22\x1e\x1e_fifc_preview_file\x1e_fifc_open_file\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_23:test\x20\x2dd\x20\x22\x24fifc_candidate\x22\x1e\x1e_fifc_preview_dir\x1e_fifc_open_dir\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_24:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x20\x2da\x20\x28ps\x20\x2dp\x20\x28_fifc_parse_pid\x20\x22\x24fifc_candidate\x22\x29\x20\x26\x3e/dev/null\x29\x1e\x1e_fifc_preview_process\x1e_fifc_open_process\x1e\x1e\x1e\x5e\x5ch\x2a\x28\x5b0\x2d9\x5d\x2b\x29
+SETUVAR --export _fifc_comp_25:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22files\x22\x1e\x1e\x1e\x1e_fifc_source_files\x1e\x1e
+SETUVAR --export _fifc_comp_26:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x1e\x1e\x1e\x1eps\x20\x2dax\x20\x2do\x20pid\x3d\x2ccommand\x3d\x1e\x1e
+SETUVAR --export _fifc_comp_27:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22options\x22\x1e\x1e_fifc_preview_opt\x1e_fifc_open_opt\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_28:test\x20\x5c\x28\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x20\x5c\x29\x3b\x20and\x20type\x20\x2dq\x20\x2df\x20\x2d\x2d\x20\x22\x24fifc_candidate\x22\x1e\x5e\x28\x3f\x21\x5cw\x2b\x5ch\x2b\x29\x1e_fifc_preview_cmd\x1e_fifc_open_cmd\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_29:test\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x1e\x5e\x28functions\x29\x3f\x5ch\x2b\x1e_fifc_preview_fn\x1e_fifc_open_fn\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_3:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x1e\x1e\x1e\x1eps\x20\x2dax\x20\x2do\x20pid\x3d\x2ccommand\x3d\x1e\x1e
+SETUVAR --export _fifc_comp_30:test\x20\x2df\x20\x22\x24fifc_candidate\x22\x1e\x1e_fifc_preview_file\x1e_fifc_open_file\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_31:test\x20\x2dd\x20\x22\x24fifc_candidate\x22\x1e\x1e_fifc_preview_dir\x1e_fifc_open_dir\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_32:test\x20\x22\x24fifc_group\x22\x20\x3d\x20processes\x20\x2da\x20\x28ps\x20\x2dp\x20\x28_fifc_parse_pid\x20\x22\x24fifc_candidate\x22\x29\x20\x26\x3e/dev/null\x29\x1e\x1e_fifc_preview_process\x1e_fifc_open_process\x1e\x1e\x1e\x5e\x5ch\x2a\x28\x5b0\x2d9\x5d\x2b\x29
+SETUVAR --export _fifc_comp_4:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22options\x22\x1e\x1e_fifc_preview_opt\x1e_fifc_open_opt\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_5:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22options\x22\x1e\x1e_fifc_preview_opt\x1e_fifc_open_opt\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_6:test\x20\x5c\x28\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x20\x5c\x29\x3b\x20and\x20type\x20\x2dq\x20\x2df\x20\x2d\x2d\x20\x22\x24fifc_candidate\x22\x1e\x5e\x28\x3f\x21\x5cw\x2b\x5ch\x2b\x29\x1e_fifc_preview_cmd\x1e_fifc_open_cmd\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_7:test\x20\x2dn\x20\x22\x24fifc_desc\x22\x20\x2do\x20\x2dz\x20\x22\x24fifc_commandline\x22\x1e\x5e\x28functions\x29\x3f\x5ch\x2b\x1e_fifc_preview_fn\x1e_fifc_open_fn\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_8:test\x20\x2df\x20\x22\x24fifc_candidate\x22\x1e\x1e_fifc_preview_file\x1e_fifc_open_file\x1e\x1e\x1e
+SETUVAR --export _fifc_comp_9:test\x20\x22\x24fifc_group\x22\x20\x3d\x20\x22files\x22\x1e\x1e\x1e\x1e_fifc_source_files\x1e\x1e
+SETUVAR --export _fifc_comp_count:0
+SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:\x7e/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
+SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_gazorby_2F_fifc_files:\x7e/\x2econfig/fish/functions/_fifc\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_action\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_completion_group\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_expand_tilde\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_cmd\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_fn\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_opt\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_process\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_parse_complist\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_parse_pid\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_path_to_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_cmd\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_file_default\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_fn\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_opt\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_process\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_source_files\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_test_version\x2efish\x1e\x7e/\x2econfig/fish/functions/fifc\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fifc\x2efish\x1e\x7e/\x2econfig/fish/completions/fifc\x2efish
+SETUVAR _fisher_jethrokuan_2F_fzf_files:\x7e/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_open\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_jorgebucaran_2F_replay_2E_fish_files:\x7e/\x2econfig/fish/functions/replay\x2efish\x1e\x7e/\x2econfig/fish/completions/replay\x2efish
+SETUVAR _fisher_joseluisq_2F_gitnow_40_32_2E_31_30_2E_30__files:\x7e/\x2econfig/fish/functions/__gitnow_config_file\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_functions\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_manual\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/gitnow\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/gitnow_config\x2efish\x1e\x7e/\x2econfig/fish/completions/__gitnow_completions\x2efish
+SETUVAR _fisher_meaningful_2D_ooo_2F_sponge_files:\x7e/\x2econfig/fish/functions/_sponge_clear_state\x2efish\x1e\x7e/\x2econfig/fish/functions/_sponge_on_exit\x2efish\x1e\x7e/\x2econfig/fish/functions/_sponge_on_postexec\x2efish\x1e\x7e/\x2econfig/fish/functions/_sponge_on_preexec\x2efish\x1e\x7e/\x2econfig/fish/functions/_sponge_on_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/_sponge_remove_from_history\x2efish\x1e\x7e/\x2econfig/fish/functions/sponge_filter_failed\x2efish\x1e\x7e/\x2econfig/fish/functions/sponge_filter_matched\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/sponge\x2efish
+SETUVAR _fisher_nickeb96_2F_puffer_2D_fish_files:\x7e/\x2econfig/fish/functions/_puffer_fish_expand_bang\x2efish\x1e\x7e/\x2econfig/fish/functions/_puffer_fish_expand_dots\x2efish\x1e\x7e/\x2econfig/fish/functions/_puffer_fish_expand_lastarg\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/puffer_fish_key_bindings\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1efranciscolourenco/done\x1ejorgebucaran/autopair\x2efish\x1ejorgebucaran/replay\x2efish\x1emeaningful\x2dooo/sponge\x1enickeb96/puffer\x2dfish\x1eacomagu/fish\x2dasync\x2dprompt\x1egazorby/fifc\x1ejethrokuan/fzf\x1ejoseluisq/gitnow\x402\x2e10\x2e0\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR --export fifc_editor:code
+SETUVAR fifc_keybinding:\x18
+SETUVAR fifc_open_keybinding:ctrl\x2do
+SETUVAR fish_color_autosuggestion:BD93F9
+SETUVAR fish_color_cancel:\x2d\x2dreverse
+SETUVAR fish_color_command:F8F8F2
+SETUVAR fish_color_comment:6272A4
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:50FA7B
+SETUVAR fish_color_error:FFB86C
+SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:\x1d
+SETUVAR fish_color_keyword:\x1d
+SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:00a6b2
+SETUVAR fish_color_option:\x1d
+SETUVAR fish_color_param:FF79C6
+SETUVAR fish_color_quote:F1FA8C
+SETUVAR fish_color_redirection:8BE9FD
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_background:\x1d
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:B3A06D
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_secondary_background:\x1d
+SETUVAR fish_pager_color_secondary_completion:\x1d
+SETUVAR fish_pager_color_secondary_description:\x1d
+SETUVAR fish_pager_color_secondary_prefix:\x1d
+SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_pager_color_selected_completion:\x1d
+SETUVAR fish_pager_color_selected_description:\x1d
+SETUVAR fish_pager_color_selected_prefix:\x1d
+SETUVAR nvm_data:/home/_cstrp/\x2elocal/share/nvm
+SETUVAR nvm_default_packages:pnpm
+SETUVAR nvm_default_version:v18\x2e8\x2e0
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
+SETUVAR pisces_only_insert_at_eol:1
+SETUVAR sponge_allow_previously_successful:true
+SETUVAR sponge_delay:2
+SETUVAR sponge_filters:sponge_filter_failed\x1esponge_filter_matched
+SETUVAR sponge_regex_patterns:\x1d
+SETUVAR sponge_successful_exit_codes:0

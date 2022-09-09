@@ -1,0 +1,73 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Timeout
+command_timeout = 10000
+
+# Use custom format
+format = """
+[┌───────────────────❯](purple)
+[│](purple)$directory$git_branch$git_metrics$git_status$nodejs 
+[└─❯ ](purple)\
+"""
+right_format = """
+$time\
+"""
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = false
+disabled = false
+style = "bold #87A752"
+
+
+[directory]
+truncation_length = 10
+truncate_to_repo = true 
+style = "bold #B3E0E7"
+read_only = " ro"
+truncation_symbol = "…/"
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = " "
+
+[git_metrics]
+added_style = "bold blue"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+#conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = "✓"
+#untracked = "🤷"
+#stashed = "📦"
+#modified = "📝"
+staged = '[++\($count\)](bold green)'
+#renamed = "👅"
+#deleted = "🗑"
+
+#[username]
+#style_user = "white bold"
+#style_root = "black bold"
+#format = "user: [$user]($style) "
+#disabled = false
+#show_always = true
+
+[time]
+disabled = false
+format = '[\[ $time \]](purple) '
+time_format = "%T"
+# Wait 10 milliseconds for starship to check files under the current directory.
+#scan_timeout = 30
+#add_newline = false
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+
+# Replace the "❯" symbol in the prompt with "➜"
+#[character] # The name of the module we are configuring is "character"
+#success_symbol = "[❯](purple)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
