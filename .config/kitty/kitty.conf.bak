@@ -1,9 +1,46 @@
+# user config
+include font/font.conf
+include scroll/scrollback.conf
+include performance/performance.conf
+include mouse/mouse.conf
+include split/split.conf
+startup_session session/session.conf
+
+# Window layout 
+remember_window_size       yes
+enabled_layouts            splits,stack,fat,tall,grid
+window_resize_step_cells   2
+window_resize_step_lines   2
+window_border_width        0.5pt
+draw_minimal_borders       no
+window_margin_width        10
+single_window_margin_width 0
+window_padding_width       7
+placement_strategy         center
+inactive_text_alpha        0.7
+hide_window_decorations    no
+resize_debounce_time       0.1
+resize_draw_strategy       static
+resize_in_steps            no
+confirm_os_window_close    -1
 
 # Background_Imgage
 background_image none
 background_image_layout scaled
-background_image_linear no
+
+# tabbar should be at the top
+tab_title_template "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"
+tab_bar_edge top
+tab_bar_style fade
+tab_bar_margin_width 0.0
+tab_fade 0.25 0.5 0.75 1
+tab_powerline_style angled
+tab_activity_symbol 🔥
+tab_bar_min_tabs 2
 background_opacity 0.90
+# tab_bar_background none
+inactive_tab_font_style normal
+# ✨❗🔥
 
 # no bells. Ever.
 enable_audio_bell no
@@ -23,29 +60,22 @@ term		     				 xterm-256color
 paste_actions quote-urls-at-prompt
 kistrip_trailing_spaces never
 select_by_word_characters @-./_~?&=%+#
+visual_window_select_characters 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
 shell_integration enabled
 kitty_mod ctrl+shift
-# map f3 kitten hints --program '*'
+map f3 kitten hints --program '*'
 dynamic_background_opacity yes
+background_image_layout tiled
+background_image_linear no
+confirm_os_window_close -1
 
 # default alphabet see https://github.com/kovidgoyal/kitty/blob/0c4b20aa4e6b29ccf7c389e15d7ff5189f8e98f5/kittens/hints/main.py#L125
 # qwerty alphabets borrow from https://github.com/fcsonline/tmux-thumbs#Alphabets
-map ctrl+a>space kitten hints --alphabet asdfqwerzxcvjklmiuopghtybn1234567890 --customize-processing custom-hints.py
-map ctrl+a>ctrl+a send_text all \x01
+map ctrl+a>space kitten hints --alphabet asdfqwerzxcvjklmiuopghtybn1234567890 --customize-processing python/custom-hints.py
 
 
-# user config
-include font/font.conf
-include scroll/scrollback.conf
-include performance/performance.conf
-include mouse/mouse.conf
-include split/splits.conf
-include tabbar/tabbar.conf
-include window/layout.conf
-#include diff.conf
-startup_session session/session.conf
 
 # BEGIN_KITTY_THEME
-# Dark Pastel
+# Wizzy Bright
 include current-theme.conf
 # END_KITTY_THEME

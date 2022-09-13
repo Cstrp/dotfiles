@@ -4,7 +4,7 @@ alias la='exa -a --color=always --group-directories-first --icons'  # all files 
 alias ld 'ls -l | grep "^d"'
 alias ll='exa -l --color=always --group-directories-first --icons'  # long format
 
-if type -q exa
+if type -q exa 
     alias l="lsd --date '+%d.%m.%Y %H:%M' -lah"
     alias l.="exa -a | egrep '^\.'" 
     alias la 'exa --long --all --group --header --binary --links --inode --blocks'

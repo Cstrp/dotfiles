@@ -1,5 +1,5 @@
 # Neofetch
-alias neo="neofetch"
+alias neo="neofetch --source /home/_cstrp/.config/neofetch/logo"
 alias kernel="uname -rs"
 alias k="uname -rs"
 alias gnome="gnome-shell --version"

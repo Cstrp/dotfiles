@@ -2,6 +2,7 @@
 alias pn="pnpm"
 alias px="pnpm dlx"
 alias pi="pnpm install"
+alias pin="pnpm init"
 alias pa="pnpm add"
 alias pas="pnpm add --save"
 alias pasd="pnpm add --save-dev"
