@@ -1,5 +1,5 @@
 # Greeting
-cls
+Clear-Host
 
 If (-Not (Test-Path Variable:PSise)) {  # Only run this in the console and not in the ISE
     Import-Module Get-ChildItemColor
@@ -28,12 +28,21 @@ Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 # Env
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 
+function x {
+    exit
+}
 
 # PNPM
 Set-Alias -Name pn -Value pnpm
 
-function pa {
-	pnpm add $args
+function .. {
+  Set-Location ..
+}
+
+function pa($arg) {
+  foreach ($i in $arg) {
+     pnpm add --save-dev $i
+  }
 }
 
 function pr {
@@ -44,8 +53,10 @@ function pu {
   pnpm update
 }
 
-function pasd {
-  pnpm add --save-dev $args
+function pasd($arg) {
+  foreach ($i in $arg) {
+     pnpm add --save-dev $i
+  }
 }
 
 function pl {
@@ -60,14 +71,9 @@ function px {
   pnpm dlx
 }
 
-function touch {
-  ni $args
+function pi {
+  pnpm install
 }
-
-function rm {
-  Remove-Item -Recurse -Force $args
-}
-
 
 # GITHUB
 . $PSScriptRoot\aliases.ps1

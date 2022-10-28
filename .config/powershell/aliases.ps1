@@ -14,7 +14,7 @@ function g {
 	git $args
 }
 function ga {
-	git add $args
+	git add '.'
 }
 function gaa {
 	git add --all $args
@@ -65,8 +65,8 @@ function gbsr {
 function gbss {
 	git bisect start $args
 }
-function gc {
-	git commit -v $args
+function gcm {
+	git commit -m $args
 }
 function gc! {
 	git commit -v --amend $args
@@ -89,7 +89,7 @@ function gcan! {
 function gcans! {
 	git commit -v -a -s --no-edit --amend $args
 }
-function gcb {
+function go {
 	git checkout -b $args
 }
 function gcf {
@@ -108,12 +108,6 @@ function gom {
 }
 function god {
 	git checkout develop $args
-}
-function gcmsg {
-	git commit -m $args
-}
-function go {
-	git checkout $args
 }
 function gcount {
 	git shortlog -sn $args
@@ -418,4 +412,12 @@ function ggp {
 	$CurrentBranch = Get-Git-CurrentBranch
 
 	git push origin $CurrentBranch
+}
+
+function touch {
+	New-Item $args
+}
+
+function rm {
+	Remove-Item -Recurse -Force $args
 }

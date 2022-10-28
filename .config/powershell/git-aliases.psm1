@@ -22,6 +22,7 @@ $FunctionsToExport = @(
 	'gbss',
 	'gc',
 	'gc!',
+	'gcm',
 	'gcn!',
 	'gca',
 	'gcam',
