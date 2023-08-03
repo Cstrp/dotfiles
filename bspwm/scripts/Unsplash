@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+img_dir=~/Pictures/wallpapers
+resolution="1920x1080"
+image_url="https://source.unsplash.com/featured/${resolution}/?tokyo,pixel"
+current_time=$(date +"%Y-%m-%d_%H-%M-%S")
+
+if [ ! -d "$img_dir" ]; then
+	mkdir $img_dir
+	notify-send "Directory $img_dir created."
+fi
+
+if [ "$(ls -A $img_dir)" ]; then
+	notify-send "Cleaning up old images..."
+	find $img_dir -type f -mtime +1 -delete
+fi
+
+wget -q "$image_url" -O $img_dir/$current_time.jpg
+
+if [ -f $img_dir/$current_time.jpg ]; then
+	feh --bg-scale $img_dir/$current_time.jpg
+	notify-send "Change wallpaper image successfully!!!"
+else
+	notify-send "Error: Image not downloaded!"
+	exit 1
+fi
+

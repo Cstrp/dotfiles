@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIRECTORY="$HOME/Documents"
+
+find "$DIRECTORY" -type d -name "node_modules" -exec rm -rf {} +

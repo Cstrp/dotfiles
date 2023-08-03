@@ -1,0 +1,55 @@
+:root {
+  /* All the CSS variables here are global */
+  /* These applies to all colorschemes */
+
+  /* If windows - `-moz-win-glass`, if macOS - `-moz-mac-vibrancy-dark` */
+  --bf-moz-appearance: -moz-win-glass !important;
+  --bf-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --bf-backdrop-blur: 6px;
+  --bf-sidebar-searchbar-radius: 6px;
+  --bf-accent-bg: #4c5ff9cc;
+  --bf-blank-page-bg: #252525;
+  --bf-urlbar-hightlight-bg: var(--bf-accent-bg);
+  --bf-urlbar-radius: 9px;
+  --bf-urlbar-results-font-size: 12pt;
+  --bf-urlbar-results-font-weight: 550;
+  --bf-urlbar-font-size: 12pt;
+  --bf-urlbar-font-weight: 500;
+  --bf-urlbar-switch-tab-color: #6498ef;
+  --bf-urlbar-bookmark-color: #53e2ae;
+  --bf-navbar-padding: 6px;
+  --bf-tab-selected-bg: #77777788;
+  --bf-tab-font-size: 11pt;
+  --bf-tab-font-weight: 400;
+  --bf-tab-height: 36px;
+  --bf-tab-border-radius: 6px;
+  --bf-tab-soundplaying-bg: #985effcc;
+
+  --toolbar-bgcolor: transparent !important;
+  --urlbar-separator-color: transparent !important;
+}
+
+/* Dark Mode */
+:root:-moz-lwtheme-brighttext {
+  --bf-main-window: transparent;
+  --bf-bg: #5b60711a;
+  --bf-color: #f2f2f2;
+
+  --bf-hover-bg: #f2f2f233;
+  --bf-active-bg: #f2f2f266;
+
+  --bf-icon-color: #f2f2f2;
+  --bf-tab-toolbar-bg: var(--bf-bg);
+  --bf-tab-selected-bg: #f2f2f210;
+  --bf-navbar-bg: var(--bf-bg);
+  --bf-urlbar-bg: var(--bf-bg);
+  --bf-urlbar-active-bg: var(--bf-bg);
+  --bf-urlbar-focused-color: var(--bf-color);
+
+  --bf-sidebar-bg: var(--bf-bg);
+  --bf-sidebar-color: var(--bf-color);
+
+  --bf-menupopup-bg: #000000aa;
+  --bf-menupopup-color: var(--bf-color);
+}

@@ -1,0 +1,58 @@
+.main-topBar-navLink,
+.x-searchInput-searchInputInput {
+  height: 40px !important;
+}
+:root {
+  --spice-main-elevated: transparent;
+} 
+.encore-dark-theme, .encore-dark-theme .encore-base-set {
+  --text-subdued: var(--spice-subtext) !important;
+  }
+.vreceNX3ABcxyddeS83B {
+	background-color: transparent !important;
+}
+.x-searchInput-searchInputSearchIcon {
+	color: var(--spice-subtext);	
+}
+
+.BoxComponent-group-naked-isInteractive-hasFocus-hasLeadingOrMedia:active::after {
+background-color: var(--spice-highlight-elevated);  
+}
+
+.main-entityHeader-container.main-entityHeader-nonWrapped {
+     min-height: 310px !important;
+}
+ :root .Root__main-view #mainImage {
+     z-index: 0 !important;
+}
+ .main-view-container {
+     z-index: 1 !important;
+}
+ @media (max-width: 850px) {
+     .main-actionBar-ActionBarRow {
+         margin-left: -6px !important;
+    }
+}
+ @media (min-width: 850px) {
+     .contentSpacing {
+         padding: 0 29px;
+    }
+}
+ :root .Root__main-view .main-actionBarBackground-background {
+     top: 310px !important;
+}
+ @media (min-width: 1280px) {
+     .playlist-playlist-playlistImageContainer {
+         height: 192px;
+         min-width: 192px;
+         width: 192px;
+    }
+}
+ :root .Root__now-playing-bar .playback-bar {
+     right: 0px !important;
+     position: fixed !important;
+}
+.Button-sm-16-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle,
+.Button-sm-16-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle {
+    color: rgba(var(--spice-rgb-selected-row),.7);
+}

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+connection_name="1337"
+
+if nmcli connection show --active | grep -q "$connection_name"; then
+	notify-send "Hotspot disabled."
+  nmcli connection down "$connection_name"
+else
+  notify-send "Hotspot enabled"
+  nmcli connection up "$connection_name"
+fi
