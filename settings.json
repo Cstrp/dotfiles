@@ -1,0 +1,385 @@
+{
+	"window.openFilesInNewWindow": "off",
+	"editor.folding": false,
+	"window.menuBarVisibility": "hidden",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	"editor.scrollBeyondLastLine": true,
+	"editor.snippetSuggestions": "bottom",
+	"workbench.layoutControl.enabled": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.renderControlCharacters": false,
+	"editor.unicodeHighlight.allowedLocales": {
+		"ru": true
+	},
+	"editor.glyphMargin": false,
+	"scm.inputFontSize": 12,
+	"markdown.preview.fontSize": 12,
+	"markdown.preview.lineHeight": 1.2,
+	"editor.codeLensFontSize": 12,
+	// //Explorer
+	"explorer.confirmDelete": false,
+	"explorer.compactFolders": false,
+	"explorer.confirmDragAndDrop": false,
+	// //Emmet
+	"emmet.showExpandedAbbreviation": "never",
+	// //Debug
+	"debug.toolBarLocation": "hidden",
+	"debug.focusWindowOnBreak": false,
+	"debug.showInlineBreakpointCandidates": false,
+	"debug.showBreakpointsInOverviewRuler": false,
+	// //Format
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"editor.formatOnPaste": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.arrowParens": "avoid",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[scss]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	// //Other
+	"git.enableSmartCommit": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"html.completion.attributeDefaultValue": "singlequotes",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"workbench.editor.centeredLayoutAutoResize": false,
+	"files.autoSave": "onFocusChange",
+	"files.defaultLanguage": "markdown",
+	"editor.mouseWheelZoom": true,
+	"editor.wordWrap": "on",
+	"editor.wrappingIndent": "same",
+	"editor.wordWrapColumn": 120,
+	// //Breadcrumbs
+	"breadcrumbs.icons": false,
+	"breadcrumbs.showKeys": false,
+	"breadcrumbs.showFiles": false,
+	"breadcrumbs.symbolPath": "off",
+	"breadcrumbs.showArrays": false,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showClasses": false,
+	"breadcrumbs.showMethods": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showFunctions": false,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showConstructors": false,
+	// //JS & TS
+	"javascript.inlayHints.enumMemberValues.enabled": true,
+	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+	"javascript.inlayHints.parameterNames.enabled": "literals",
+	"javascript.inlayHints.parameterTypes.enabled": true,
+	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+	"javascript.inlayHints.variableTypes.enabled": true,
+	// "js/ts.implicitProjectConfig.checkJs": true,
+	"javascript.suggestionActions.enabled": false,
+	"typescript.suggestionActions.enabled": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"editor.unicodeHighlight.allowedCharacters": {
+		"а": true,
+		"с": true,
+		"Т": true,
+		"б": true,
+		"е": true
+	},
+	"workbench.editor.limit.value": 5,
+	"terminal.integrated.minimumContrastRatio": 3.5,
+	"editor.codeLensFontFamily": "Hack nerd",
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"prettier.printWidth": 120,
+	"prettier.enable": true,
+	"prettier.useEditorConfig": true,
+	"terminal.integrated.fontFamily": "Hack Nerd Font",
+	"terminal.integrated.fontSize": 12,
+	"window.title": "${appName}",
+	"breadcrumbs.enabled": true,
+	// ====
+	"explorer.sortOrder": "type",
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.list.smoothScrolling": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.tree.renderIndentGuides": "none",
+	"workbench.tree.indent": 20,
+	"css.lint.duplicateProperties": "ignore",
+	"git.autofetch": true,
+	"material-icon-theme.hidesExplorerArrows": false,
+	"emmet.triggerExpansionOnTab": true,
+	"editor.renderWhitespace": "selection",
+	"editor.tabSize": 2,
+	"editor.lineHeight": 22,
+	"editor.guides.indentation": false,
+	"editor.guides.highlightActiveIndentation": false,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorStyle": "line",
+	"editor.letterSpacing": 0.2,
+	"editor.renderLineHighlight": "gutter",
+	"editor.matchBrackets": "near",
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "expand",
+	"typescript.autoClosingTags": true,
+	"typescript.suggest.enabled": true,
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	/* =============== Misc Settings =============== */
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.fontSize": 14,
+	"terminal.integrated.allowMnemonics": true,
+	"terminal.external.linuxExec": "kitty",
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"debug.console.fontSize": 12,
+	"workbench.startupEditor": "newUntitledFile",
+	"terminal.integrated.cursorStyle": "line",
+	"window.customMenuBarAltFocus": false,
+	"window.titleBarStyle": "custom",
+	"prettier.requireConfig": true,
+	"cSpell.language": "en,ru",
+	"cSpell.enableFiletypes": [
+		"blade",
+		"jsx",
+		"sass",
+		"vue"
+	],
+	"cSpell.userWords": [
+		"anya",
+		"autofetch",
+		"browserslist",
+		"cloudinary",
+		"codestream",
+		"corejs",
+		"cкрипты",
+		"dmbijgycx",
+		"donot",
+		"esbenp",
+		"Fira",
+		"foxundermoon",
+		"Parens",
+		"rslang",
+		"sidenav",
+		"singlequotes",
+		"stackoverflow",
+		"synthwave",
+		"tailwindcss",
+		"thems",
+		"автообнаружение",
+		"вебпака",
+		"двух",
+		"инлайновыми",
+		"меня",
+		"Нажми",
+		"табов"
+	],
+	"[shellscript]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.gradle": true,
+		"**/.idea": true,
+		"**/.mvn": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true
+	},
+	// Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+	"search.exclude": {
+		"**/node": true,
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/build": true,
+		"**/target": true
+	},
+	"[ignore]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"eslint.format.enable": true,
+	"eslint.packageManager": "pnpm",
+	"eslint.run": "onSave",
+	"[properties]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"Lua.telemetry.enable": true,
+	"editor.formatOnSave": true,
+	"security.workspace.trust.banner": "always",
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"workbench.editorAssociations": {
+		"*.zip": "default"
+	},
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.organizeImports": true,
+		"source.fixAll": true,
+	},
+	"editor.foldingImportsByDefault": true,
+	"editor.fontFamily": "'Hack nerd font', 'Fira Code', monospace",
+	"editor.fontLigatures": true,
+	"editor.guides.bracketPairs": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.lineNumbers": "relative",
+	"editor.linkedEditing": true,
+	"editor.minimap.enabled": false,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "off",
+		"strings": "off"
+	},
+	"editor.scrollBeyondLastColumn": 0,
+	"editor.suggest.preview": true,
+	"editor.suggestSelection": "recentlyUsedByPrefix",
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"codestream.serverUrl": "https://api.codestream.com",
+	"codestream.email": "mrdeathcore96@yandex.ru",
+	"workbench.colorTheme": "Rosé Pine",
+	"cSpell.diagnosticLevel": "Hint",
+	"cSpell.showAutocompleteSuggestions": true,
+	"intelli-refactor.useCompatSelection": true,
+	"typescriptHero.imports.disableImportsSorting": true,
+	"typescriptHero.imports.disableImportRemovalOnOrganize": true,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"name": "Comment",
+				"scope": [
+					"comment",
+					"punctuation.definition.comment"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#4A4A4A"
+				}
+			},
+			{
+				"name": "Keyword, Storage",
+				"scope": [
+					"Keyword",
+					"Storage"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"name": "Keyword Control",
+				"scope": [
+					"keyword.control"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "entity.other.attribute-name",
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#78dce8"
+				}
+			},
+			{
+				"name": "entity.name.method.js",
+				"scope": [
+					"entity.name.method.js"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#82AAFF"
+				}
+			},
+			{
+				"name": "Language methods",
+				"scope": [
+					"variable.language"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#FF5370"
+				}
+			},
+			{
+				"name": "HTML Attributes",
+				"scope": [
+					"text.html.basic entity.other.attribute-name.html",
+					"text.html.basic entity.other.attribute-name"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#FFCB6B"
+				}
+			},
+			{
+				"name": "Decorators",
+				"scope": [
+					"tag.decorator.js entity.name.tag.js",
+					"tag.decorator.js punctuation.definition.tag.js"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#82AAFF"
+				}
+			},
+			{
+				"name": "ES7 Bind Operator",
+				"scope": [
+					"source.js constant.other.object.key.js string.unquoted.label.js"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#FF5370"
+				}
+			},
+			{
+				"name": "Markup - Italic",
+				"scope": [
+					"markup.italic"
+				],
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#f07178"
+				}
+			},
+			{
+				"name": "Markup - Bold-Italic",
+				"scope": [
+					"markup.bold markup.italic",
+					"markup.italic markup.bold",
+					"markup.quote markup.bold",
+					"markup.bold markup.italic string",
+					"markup.italic markup.bold string",
+					"markup.quote markup.bold string"
+				],
+				"settings": {
+					"fontStyle": "bold",
+					"foreground": "#f07178"
+				}
+			}
+		]
+	},
+}

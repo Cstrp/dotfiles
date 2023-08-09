@@ -39,10 +39,6 @@ case "$class" in
 	    eval "$consequences"
 	    [ "$state" ] || echo "state=floating desktop=^5 follow=on center=on"
 	    ;;
-	firefox-developer-edition|Navigator)
-	    eval "$consequences"
-	    [ "$state" ] || echo "desktop=^9 follow=off"
-	    ;;
 	 Transmission-gtk)
 	    eval "$consequences"
 	    [ "$state" ] || echo "desktop=^6 follow=on"

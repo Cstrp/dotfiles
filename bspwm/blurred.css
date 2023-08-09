@@ -1,14 +1,11 @@
 :root {
-  /* All the CSS variables here are global */
-  /* These applies to all colorschemes */
-
   /* If windows - `-moz-win-glass`, if macOS - `-moz-mac-vibrancy-dark` */
   --bf-moz-appearance: -moz-win-glass !important;
   --bf-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol;
   --bf-backdrop-blur: 6px;
   --bf-sidebar-searchbar-radius: 6px;
-  --bf-accent-bg: #4c5ff9cc;
+  --bf-accent-bg: #ce4cf9cc;
   --bf-blank-page-bg: #252525;
   --bf-urlbar-hightlight-bg: var(--bf-accent-bg);
   --bf-urlbar-radius: 9px;
