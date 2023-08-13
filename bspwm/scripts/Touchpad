@@ -2,11 +2,10 @@
 
 touchpad_id=20
 
-if xinput list-props $touchpad_id | grep "Device Enabled (.*):.*1" >/dev/null
-then
+if xinput list-props $touchpad_id | grep "Device Enabled (.*):.*1" >/dev/null; then
   xinput disable $touchpad_id
   notify-send -t 1000 "Touchpad disabled"
 else
   xinput enable $touchpad_id
-	notify-send -t 1000 "Touchpad enabled"
+  notify-send -t 1000 "Touchpad enabled"
 fi

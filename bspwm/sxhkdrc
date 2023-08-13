@@ -2,14 +2,6 @@
 super + Return
 	kitty
 	
-# Floating Terminal
-super + alt + Return
-	termite -t floaterm
-
-# Select Terminal
-super + alt + t
-	Term --st
-
 # Apps
 shift + alt + {b,n,p,r,t,w,m,v,k}
        {firefox, \
@@ -18,7 +10,7 @@ shift + alt + {b,n,p,r,t,w,m,v,k}
         kitty -e ranger, \
         telegram-desktop, \
         whatsapp-nativefier --disable-gpu, \
-        env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --disable-gpu --no-zygote %U, \
+       	spotify \
         kitty -e nvim, \
         kitty -t musicplayer -e "ncmpcpp"}
         
@@ -58,9 +50,6 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd; notify-send 'sxhkd realoaded' 'realoaded'
 	
-# Random wallpaper
-super + alt + w
-	RandomWall
 
 #
 # bspwm hotkeys
@@ -104,10 +93,6 @@ super + g
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-
-# set the node flags
-# ctrl + alt {m,x,s,p,i}
-	# bspc node -g {marked,locked,sticky,private,hidden}
 
 
 # Focused desktop window gaps scroll
