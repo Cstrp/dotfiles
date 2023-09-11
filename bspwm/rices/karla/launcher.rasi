@@ -1,12 +1,11 @@
 configuration {
 	modi: 						"drun";
-	icon-theme: 				"Papirus-Dark";
-	application-fallback-icon: 	"Adwaita";
+	icon-theme: 				"WhiteSur";
+	application-fallback-icon: 	"WhiteSur";
     show-icons:                 true;
 	drun-display-format:        "{name}";
 	disable-history:            true;
 	sidebar-mode: 				false;
-	
 	hover-select:				true;
 	me-select-entry:			"";
 	me-accept-entry:			"MousePrimary";

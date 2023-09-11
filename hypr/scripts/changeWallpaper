@@ -1,0 +1,23 @@
+#!/bin/bash
+
+IMAGE_DIR="$HOME/Pictures/wallpapers"
+RESOLUTION="1920x1080"
+URL="https://source.unsplash.com/featured/${RESOLUTION}/?tokyo,japan,night"
+CURRENT_TIME=$(date +"%Y-%m-%d_%H-%M-%S")
+IMAGE_PATH="$IMAGE_DIR/$CURRENT_TIME.jpg"
+
+[ ! -d "$IMAGE_DIR" ] && mkdir -p "$IMAGE_DIR"
+
+find "$IMAGE_DIR" -type f -mtime +1 -delete
+
+wget -q -O "$IMAGE_PATH" "$URL"
+
+if [ -f "$IMAGE_PATH" ]; then
+  pidof swaybg && pkill swaybg
+  swaybg -m fill -i "$IMAGE_PATH" &
+
+  echo "Changed wallpaper image successfully!"
+else
+  echo "Error: Image not downloaded!"
+  exit 1
+fi

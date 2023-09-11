@@ -96,8 +96,15 @@ set_dunst_config() {
 
 # Launch the bar and or eww widgets
 launch_bars() {
-	eww -c ${rice_dir}/bar open bar &
-	eww -c ${rice_dir}/dashboard daemon &
+	eww_path="$HOME/eww/target/release/eww"
+
+	if [ -x "$eww_path" ]; then
+		"$eww_path" -c ${rice_dir}/bar open bar &
+		"$eww_path" -c ${rice_dir}/dashboard daemon &
+	else
+		echo "Eww path not found: $eww_path"
+	fi
+
 	polybar -q tray -c ${rice_dir}/bar/polybar_tray.ini &
 }
 
