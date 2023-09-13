@@ -8,6 +8,10 @@ if [ "$THEMEIS" == "default" ]; then
     SWITCHTO="-b&w"
 elif [ "$THEMEIS" == "b&w" ]; then
     SWITCHTO="-rgb"
+elif [ "$THEMEIS" == "awe" ]; then
+    SWITCHTO="-awe"
+elif [ "$THEMEIS" == "minimal" ]; then
+    SWITCHTO="-minimal"
 elif [ "$THEMEIS" == "rgb" ]; then
     SWITCHTO="-default_alter"
 else
@@ -27,6 +31,3 @@ fi
 # Restart waybar
 killall waybar
 exec ~/.config/hypr/scripts/statusbar
-
-
-

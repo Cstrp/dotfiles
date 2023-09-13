@@ -5,17 +5,16 @@
   "rotate": 0,
     "format": "{icon} {percent}",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
-  //"format-icons": ["", ""] 
     "on-click": "",
     "on-click-middle": "",
     "on-click-right": "",
     "on-update": "",
     "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
     "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
-    "smooth-scrolling-threshold": 1,
+    "smooth-scrolling-threshold": 1
 },
  "hyprland/submap": {
-   "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
+   "format": "<span style=\"italic\">  {}</span>", 
    "tooltip": false
 },
  "hyprland/window": {
@@ -23,15 +22,13 @@
    "max-length": 360
 },
  "cpu": {
- //"interval": 5,
- //"format": " {usage}%",
    "interval": 1,
    "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
-   "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+   "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
 },
  "disk": {
   "interval": 30,
-  "format": " {free}",
+  "format": " {free}"
 },
  "memory": {
   "interval": 10,
@@ -42,7 +39,6 @@
   "interval": 10,
   "tooltip": false,
   "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-  //"thermal-zone": 0,
   "critical-threshold": 82,
   "format-critical": "{temperatureC}°C {icon}",
   "format": "{temperatureC}°C {icon}",
@@ -67,7 +63,6 @@
 },
   "wlr/workspaces": {
     "format": "{name}",
-    //"format": "{name}: {icon}",
     "on-click": "activate",
     "all-outputs": true,
     "sort-by-number": true,
@@ -81,19 +76,15 @@
       "7": "7  ",
       "8": "8  ",
       "9": "9  ",
-      "10": " 10 ",
-     // "focused": "",
-     // "default": "",
+      "10": " 10 "
 },
     "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
 },	
  "battery": {
    "interval": 60,
    "align": 0,
    "rotate": 0,
- //"bat": "BAT1",
- //"adapter": "ACAD",
    "full-at": 100,
    "design-capacity": false,
    "states": {
@@ -105,7 +96,6 @@
    "format-charging": " {capacity}%",
    "format-plugged": " {capacity}%",
    "format-full": "{icon} Full",
- //"format-good": "",
     "format-alt": "{icon} {time}",
     "format-icons": ["", "", "", "", ""],
     "format-time": "{H}h {M}min",
@@ -113,19 +103,17 @@
     "on-click-right": "~/.config/hypr/scripts/glassmorphismToggle"
 },
  "clock": {
-//"interval": 60,
    "align": 0,
    "rotate": 0,
    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
    "format": "{: %H:%M   %a, %e %b}",
-   //"format-alt": " {:%a %b %d, %G}",
-   "on-click-middle": "~/.config/hypr/scripts/changeWallpaper",
+   "on-click-middle": "~/.config/hypr/scripts/changeWallpaper"
 },
   "clock#2": {
    "format": "{:  %H:%M}",
    "tooltip": true,
    "tooltip-format": "{:  %A,  %e %B %Y}",
-   "on-click-middle": "~/.config/hypr/scripts/changeWallpaper",
+   "on-click-middle": "~/.config/hypr/scripts/changeWallpaper"
 },
   "clock#3": {
     "format": " {:%H:%M}",
@@ -168,12 +156,12 @@
   "format-disconnected": "睊 Disconnected",
   "format-disabled": "睊 Disabled",
   "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
-  "tooltip-format": " {ifname} via {gwaddr}",
+  "tooltip-format": " {ifname} via {gwaddr}"
 },
  "custom/cycle_wall":{
   "format":"",
   "on-click": "~/.config/hypr/scripts/changeWallpaper",
-  "tooltip-format": "Change wallpaper",
+  "tooltip-format": "Change wallpaper"
 },
  "pulseaudio": {
    "format": "{icon} {volume} %",
@@ -187,14 +175,14 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""],
+      "default": ["", "", ""]
 },
   "scroll-step": 5.0,
   "on-click": "~/.config/hypr/scripts/volume --toggle",
   "on-click-right": "pavucontrol",
   "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
   "on-scroll-down": "~/.config/hypr/scripts/volume --dec",
-  "smooth-scrolling-threshold": 1,
+  "smooth-scrolling-threshold": 1
 },
   "pulseaudio#microphone": {
     "format": "{format_source}",
@@ -204,7 +192,7 @@
     "on-click-right": "pavucontrol",
     "on-scroll-up": "~/.config/hypr/scripts/volume --mic-inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume --mic-dec",
-    "scroll-step": 5,
+    "scroll-step": 5
 },
   "wireplumber": {
     "format": "{icon} {volume} %",
@@ -213,36 +201,30 @@
    "on-click-right": "pavucontrol",
    "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
    "on-scroll-down": "~/.config/hypr/scripts/volume --dec",
-    "format-icons": ["", "", ""],
+    "format-icons": ["", "", ""]
 },
  "tray": {
     "icon-size": 16,
-    "spacing": 8,
+    "spacing": 8
 },
   "custom/lock_screen": {
     "format": "",
     "on-click": "~/.config/hypr/scripts/lockscreen",
     "on-click-right": "~/.config/hypr/scripts/changeWallpaper2",
-    "tooltip": false,
+    "tooltip": false
 },
- "custom/keybindings": {
-  "format":"爵",
-  "tooltip": false,
-  "on-click": "~/.config/hypr/scripts/keyhint",
-},
-//note: pacman-contrib should be installed
  "custom/updater":{
   "format": "{}",
   "exec": "checkupdates | wc -l",
   "exec-if": "[[ $(checkupdates | wc -l) ]]",
   "interval": 15,
-  "on-click": "foot -T update paru -Syu && notify-send 'The system has been updated'",
+  "on-click": "foot -T update yay -Syu && notify-send 'The system has been updated'"
 },
  "idle_inhibitor": {
    "format": "{icon}",
    "format-icons": {
      "activated": "",
-     "deactivated": "",
-},
+     "deactivated": ""
+}
 }
 }

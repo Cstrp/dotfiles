@@ -14,24 +14,19 @@
   "modules-left": [
 	"wlr/workspaces", 
 	"cpu", 
-	"temperature", 
-	"memory", 
 	"custom/weather"
 	],
   
   "modules-center": [
-	"custom/menu", 
 	"clock#3", 
 	"custom/lock_screen"
 	], 
 
   "modules-right": [
 	"hyprland/window", 
-	"tray", 
-	"battery", 
 	"backlight",
 	"pulseaudio",
-	"pulseaudio#microphone", 
+	"tray",
 	"custom/power"
 	]
 }

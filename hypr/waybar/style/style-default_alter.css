@@ -1,9 +1,14 @@
-@define-color critical #ff0000; /* critical color */
-@define-color warning #f3f809;  /* warning color */
-@define-color fgcolor #ffffff;  /* foreground color */
-@define-color bgcolor #303030;  /* background color */
-@define-color bgcolor #222436;  /* background color */
-@define-color alert   #df3320;
+@define-color critical #ff0000;
+/* critical color */
+@define-color warning #f3f809;
+/* warning color */
+@define-color fgcolor #ffffff;
+/* foreground color */
+@define-color bgcolor #303030;
+/* background color */
+@define-color bgcolor #222436;
+/* background color */
+@define-color alert #df3320;
 
 @define-color accent1 #ff7a93;
 @define-color accent2 #b9f27c;
@@ -48,7 +53,7 @@ tooltip {
     border-color: #11111b;
 }
 
-tooltip label{
+tooltip label {
     color: #cdd6f4;
 }
 
@@ -59,7 +64,7 @@ tooltip label{
     color: #ffffff;
     /*min-width: 36px;*/
     /* Use box-shadow instead of border so the text isn't offset */
-/*    box-shadow: inset 0 -3px transparent;*/
+    /*    box-shadow: inset 0 -3px transparent;*/
     /* border-radius: 0px; */
 }
 
@@ -70,7 +75,7 @@ tooltip label{
     color: #D3D3D3;
     /*min-width: 36px;*/
     /* Use box-shadow instead of border so the text isn't offset */
-/*    box-shadow: inset 0 -3px transparent;*/
+    /*    box-shadow: inset 0 -3px transparent;*/
     /* border-radius: 0px; */
 }
 
@@ -117,7 +122,7 @@ tooltip label{
     margin: 4px 3px 5px 3px;
     color: @fgcolor;
     /* background-color: #bbccdd; */
-    background-color:transparent;
+    background-color: transparent;
 }
 
 #window,
@@ -126,17 +131,17 @@ tooltip label{
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
 #clock {
-     color: @accent2;
+    color: @accent2;
 }
 
 #battery {
@@ -156,13 +161,14 @@ tooltip label{
 }
 
 #battery.critical:not(.charging) {
-/*    color: @critical;
+    /*    color: @critical;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-*/    background-color: @critical;
+*/
+    background-color: @critical;
     color: @white;
 }
 
@@ -175,7 +181,7 @@ label:focus {
 }
 
 #memory {
-     color: @accent3;
+    color: @accent3;
 }
 
 #backlight {
@@ -197,6 +203,7 @@ label:focus {
 #pulseaudio-muted {
     color: @accent2;
 }
+
 #wireplumber {
     color: @accent4;
 }
@@ -205,7 +212,7 @@ label:focus {
     color: @accent2;
 }
 
-#pluseaudio-source-muted{
+#pluseaudio-source-muted {
     color: #a0a0a0;
 }
 
@@ -216,9 +223,11 @@ label:focus {
 #custom-waylandvsxorg {
     color: @accent5;
 }
+
 #custom-power_profile {
-     color: @accent3;
+    color: @accent3;
 }
+
 #custom-media {
     background-color: #66cc99;
     color: #2a5c45;

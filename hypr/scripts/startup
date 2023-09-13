@@ -15,5 +15,3 @@ ${SCRIPTSDIR}/notifications &
 
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
-
-

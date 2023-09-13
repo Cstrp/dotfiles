@@ -2,20 +2,20 @@
 
 ## General
 show=drun
-prompt=Apps
+prompt=
 normal_window=true
 layer=top
 term=foot
-columns=2
+columns=1
 
 ## Geometry
-width=30%
+width=40%
 height=30%
-location=0
+location=10%
 orientation=vertical
 halign=fill
 line_wrap=off
-dynamic_lines=false
+dynamic_lines=true
 
 ## Images
 allow_markup=true
@@ -25,13 +25,13 @@ image_size=24
 ## Search
 exec_search=false
 hide_search=false
-parse_search=false
+parse_search=true
 insensitive=false
 
 ## Other
 hide_scroll=true
 no_actions=true
-sort_order=default
+sort_order=alphabetical
 gtk_dark=true
 filter_rate=100
 

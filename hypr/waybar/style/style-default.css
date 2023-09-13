@@ -18,25 +18,28 @@ window#waybar {
   transition-duration: 0.5s;
   margin: 0px 0px;
 }
+
 window#waybar.empty #window {
-	background: rgba(12, 12, 12, 0.0);
+  background: rgba(12, 12, 12, 0.0);
 }
+
 window#waybar.hidden {
   opacity: 0.1;
 }
 
 tooltip {
-    background: #1e1e2e;
-    opacity: 0.8;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #11111b;
+  background: #1e1e2e;
+  opacity: 0.8;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #11111b;
 }
 
-tooltip label{
-    color: #cdd6f4;
+tooltip label {
+  color: #cdd6f4;
 }
+
 #workspaces button {
   padding: 0 0px;
   color: #7984a4;
@@ -51,9 +54,11 @@ tooltip label{
 #workspaces button.focused {
   background-color: transparent;
 }
+
 #workspace button.hover {
   background-color: transparent;
 }
+
 #workspaces button.active {
   color: #fff;
 }
@@ -159,12 +164,12 @@ tooltip label{
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
   margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
   margin-right: 0;
 }
 
@@ -175,6 +180,7 @@ tooltip label{
 #wireplumber {
   color: #FFD580;
 }
+
 #backlight {
   /* color: #EBCB8B; */
   color: #8fbcbb;
@@ -255,11 +261,11 @@ label:focus {
   background-color: #eb4d4b;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
@@ -276,4 +282,3 @@ label:focus {
 #temperature {
   color: #ADD8E6;
 }
-

@@ -1,24 +1,29 @@
 * {
-    border: none;
+    /* `otf-font-awesome` is required to be installed for icons */
     font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
     font-size: 18px;
-    color: #ffffff;
-    min-height: 0;
-    border-radius: 10px;
+    font-weight: bold;
+    margin: 1px;
+    padding: 0 5px 0 5px;
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    /* border-top: 8px transparent; */
+    border-radius: 0px;
+    transition-duration: 0.5s;
+    margin: 0px 0px;
 }
-window > box {
-   margin: 1px 2px 2px;
-    background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    color: white;
+
+window#waybar.empty #window {
+    background: rgba(12, 12, 12, 0.0);
 }
-window {
-	/*font-weight: bold;*/
+
+window#waybar.hidden {
+    opacity: 0.1;
 }
 
 tooltip {
@@ -30,38 +35,35 @@ tooltip {
     border-color: #11111b;
 }
 
-tooltip label{
+tooltip label {
     color: #cdd6f4;
 }
-/*-----module groups----*/
-.modules-right {
-	background-color: rgba(0,43,51,0.1);
-    margin: 2px 10px 0 0;
-}
-.modules-center {
-	background-color: rgba(0,43,51,0.1);
-    margin: 2px 0 0 0;
-}
-.modules-left {
-    margin: 2px 0 0 5px;
-	background-color: rgba(0,43,51,0.1);
-}
-/*-----modules indv----*/
+
 #workspaces button {
-    padding: 0px 0px;
+    padding: 0 0px;
+    color: #7984a4;
     background-color: transparent;
-}
-#workspaces button:hover {
-    box-shadow: inherit;
-	background-color: rgba(0,153,153,0);
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each workspace name */
+    border: none;
+    border-radius: 0;
 }
 
 #workspaces button.focused {
-	background-color: rgba(0,85,102,0);
+    background-color: transparent;
 }
+
+#workspace button.hover {
+    background-color: transparent;
+}
+
 #workspaces button.active {
-	background-color: rgba(191, 191, 191,0.1);
-	/*box-shadow:inherit;*/
+    color: #fff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
 }
 
 #clock,
@@ -77,18 +79,17 @@ tooltip label{
 #custom-media,
 #mode,
 #tray,
-#cava,
 #idle_inhibitor,
 #mpd,
+#cava,
 #bluetooth,
 #workspaces,
 #custom-hyprPicker,
 #custom-menu,
-#custom-power,
 #custom-spotify,
-#custom-weather,
 #custom-power,
 #custom-lock_screen,
+#custom-weather,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
 #custom-weather.clearNight,
@@ -98,42 +99,185 @@ tooltip label{
 #custom-weather.rainyNight,
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
-#custom-weather.default 
-#idle_inhibitor {
-    padding: 0 10px;
-}
-#mode {
-    color: #cc3436;
-    font-weight: bold;
-}
-#custom-power {
-     /*background-color: rgba(0,119,179,0.6);*/
-    /*border-radius: 50px;*/
-    margin: 5px 5px;
-    padding: 1px 3px;
-}
-/*-----Indicators----*/
-#idle_inhibitor.activated {
-    color: #2dcc36;
-}
-#pulseaudio.muted {
-    color: #cc3436;
-}
-#temperature.critical {
-    color: #cc3436;
-}
-/*-----Colors----*/
-/*
- *rgba(0,85,102,1),#005566 --> Indigo(dye)
- *rgba(0,43,51,1),#002B33 --> Dark Green 
- *rgba(0,153,153,1),#009999 --> Persian Green 
- *rgba(191, 191, 191,1) #C0C0C0 --> grey
- */
-#waybar {
-    background-color: #282828;
-    color: #d8d8d8;
+#custom-weather.default {
+    padding: 0px 10px;
+    color: #e5e5e5;
+    /* color: #bf616a; */
+    border-radius: 6px;
+    background-color: rgba(50, 50, 50, 0.1);
 }
 
-#waybar.empty, #waybar.tiled, #waybar.floating {
-    background-color: transparent;
+#workspaces {
+    border-radius: 6px;
+    padding: 0px 10px;
+}
+
+#cpu {
+    color: #fb958b;
+}
+
+#memory {
+    color: #ebcb8b;
+}
+
+#power {
+    color: #ebcb8b;
+}
+
+#custom-launcher {
+    background-color: #1b242b;
+    color: #6a92d7;
+    border-radius: 6px;
+    padding: 0 0px;
+}
+
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunny {
+    color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+    color: #cad3f5;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #ebecf0;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#pulseaudio {
+    color: #FFD580;
+}
+
+#wireplumber {
+    color: #FFD580;
+}
+
+#backlight {
+    /* color: #EBCB8B; */
+    color: #8fbcbb;
+}
+
+#clock {
+    color: #90EE90;
+    /* background-color: #14141e; */
+}
+
+#battery {
+    color: #c0caf5;
+    /* background-color: #90b1b1; */
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+    color: #26a65b;
+    /* background-color: #26a65b; */
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(30, 34, 42, 0.5);
+        color: #abb2bf;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#disk {
+    background-color: #964b00;
+}
+
+#bluetooth {
+    color: #707d9d;
+}
+
+#bluetooth.disconnected {
+    color: #f53c3c;
+}
+
+#network {
+    color: #b48ead;
+}
+
+#network.disconnected {
+    color: #f53c3c;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#temperature {
+    color: #ADD8E6;
 }
