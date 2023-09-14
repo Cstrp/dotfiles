@@ -61,3 +61,28 @@
 📓 .Xresources
 📓 starship.toml
 ```
+
+## Keybinds ⇩
+
+| Shortcut                | Description                                                  |
+| ----------------------- | ------------------------------------------------------------ |
+| `$mainMod` + `SHIFT` + `C` | Reload hyprctl                                            |
+| `$mainMod` + `SHIFT` + `D` | Open fullmenu                                             |
+| `$mainMod` + `E`         | Execute menu script                                         |
+| `$mainMod` + `SHIFT` + `Q` | Kill active window                                        |
+| `$mainMod` + `T`         | Toggle floating for active window                           |
+| `$mainMod` + `F`         | Toggle fullscreen for active window                         |
+| `$mainMod` + `Q`         | Kill active window                                          |
+| `$mainMod` + `Return`    | Open terminal                                               |
+| `$mainMod` + `SHIFT` + `T` | Open file manager (Thunar)                                |
+| `$mainMod` + `SHIFT` + `B` | Open Firefox Nightly browser                              |
+| `$mainMod` + `SHIFT` + `G` | Execute gamemode.sh script                                |
+| `$mainMod` + `L`         | Lock the screen                                             |
+| `$mainMod` + `CTRL` + `S` | Execute wofi-beats script                                  |
+| `$mainMod` + `W`         | Change wallpaper                                            |
+| `$mainMod` + `SHIFT` + `W` | Change Waybar style                                       |
+| `$mainMod` + `CTRL` + `W` | Execute wallpaper-switcher script                          |
+| `$mainMod` + `B`         | Kill Waybar (SIGUSR1 signal)                                |
+| `$mainMod` + `Print`     | Take a screenshot                                           |
+| `$mainMod` + `CTRL` + `SHIFT` + `Print` | Take a delayed screenshot                    |
+| `$mainMod` + `SHIFT` + `Print` | Take a screenshot of a selected area                  |
