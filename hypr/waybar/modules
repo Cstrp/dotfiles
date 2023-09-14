@@ -18,8 +18,8 @@
    "tooltip": false
 },
  "hyprland/window": {
-   "format": "{}",
-   "max-length": 360
+   "format": "<span style=\"italic\">{} {}</span>",
+   "max-length": 100
 },
  "cpu": {
    "interval": 1,
@@ -44,13 +44,6 @@
   "format": "{temperatureC}°C {icon}",
   "format-icons": [""],
   "on-click-right": "foot --title btop sh -c 'btop'"
-},
- "custom/menu": {
-  "format": "",
-  "tooltip": false,
-  "on-click": "$HOME/.config/hypr/scripts/menu",
-  "on-click-right": "~/.config/hypr/scripts/waybar-style-change"
-
 },
  "custom/weather": {
    "format": "{}",

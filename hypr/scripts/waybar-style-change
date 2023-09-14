@@ -8,6 +8,8 @@ if [ "$THEMEIS" == "default" ]; then
     SWITCHTO="-b&w"
 elif [ "$THEMEIS" == "b&w" ]; then
     SWITCHTO="-rgb"
+elif [ "$THEMEIS" == "river" ]; then
+    SWITCHTO="-river"
 elif [ "$THEMEIS" == "awe" ]; then
     SWITCHTO="-awe"
 elif [ "$THEMEIS" == "minimal" ]; then

@@ -1,38 +1,36 @@
-#!/bin/bash
+#!/bin/sh
 
-# Имя тачпада (замените на фактическое имя вашего тачпада)
-TOUCHPAD_NAME="ELAN1203:00 04F3:307A"
+# NOTE: find the right device using hyprctl devices
+HYPRLAND_DEVICE="elan1203:00-04f3:307a-touchpad"
+
+if [ -z "$XDG_RUNTIME_DIR" ]; then
+	export XDG_RUNTIME_DIR=/run/user/$(id -u)
+fi
 
 export STATUS_FILE="$XDG_RUNTIME_DIR/touchpad.status"
 
 enable_touchpad() {
-  printf "true" >"$STATUS_FILE"
-  notify-send -u normal "Enabling Touchpad"
+	printf "true" >"$STATUS_FILE"
 
-  # Находим устройство по имени и включаем его
-  DEVICE_ID=$(libinput list-devices | grep -i "$TOUCHPAD_NAME" | grep -o 'event[0-9]\+')
-  if [ -n "$DEVICE_ID" ]; then
-    libinput debug-events --enable-device "$DEVICE_ID"
-  fi
+	notify-send -u normal "Enabling Touchpad"
+
+	hyprctl keyword "device:$HYPRLAND_DEVICE:enabled" true
 }
 
 disable_touchpad() {
-  printf "false" >"$STATUS_FILE"
-  notify-send -u normal "Disabling Touchpad"
+	printf "false" >"$STATUS_FILE"
 
-  # Находим устройство по имени и выключаем его
-  DEVICE_ID=$(libinput list-devices | grep -i "$TOUCHPAD_NAME" | grep -o 'event[0-9]\+')
-  if [ -n "$DEVICE_ID" ]; then
-    libinput debug-events --disable-device "$DEVICE_ID"
-  fi
+	notify-send -u normal "Disabling Touchpad"
+
+	hyprctl keyword "device:$HYPRLAND_DEVICE:enabled" false
 }
 
 if ! [ -f "$STATUS_FILE" ]; then
-  enable_touchpad
+	enable_touchpad
 else
-  if [ $(cat "$STATUS_FILE") = "true" ]; then
-    disable_touchpad
-  elif [ $(cat "$STATUS_FILE") = "false" ]; then
-    enable_touchpad
-  fi
+	if [ $(cat "$STATUS_FILE") = "true" ]; then
+		disable_touchpad
+	elif [ $(cat "$STATUS_FILE") = "false" ]; then
+		enable_touchpad
+	fi
 fi
