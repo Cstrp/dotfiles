@@ -20,3 +20,44 @@
 ### Spotify + Cava
 
 ![spotify](https://github.com/Cstrp/dotfiles/blob/main/assets/Screenshot2.png)
+
+## Tree of files 🌱
+
+```bash
+~
+├── .mozila
+│   ├── 📁  firefox
+│   │   ├── 📁 chrome
+│   📓 user.js
+├── .config
+│   ├── 📁  bspwm
+│   ├── 📁  cava
+│   ├── 📁  fish
+│   ├── 📁  nwg-look
+│   ├── 📁  powershell
+│   ├── 📁  swaylock  
+│   ├── 📁  foot             
+│   ├── 📁  gtk-3.0
+│   ├── 📁  gtk-4.0 
+│   ├── 📁  kitty 
+│   ├── 📁  pipewire
+│   ├── 📁  spicetify 
+│   ├── 📁  wlogout
+│   ├── 📁  hypr
+│   │   ├── 📁  mako
+│   │   ├── 📁  wofi
+│   │   ├── 📁  scripts
+│   │   ├── 📁  themes
+│   │   ├── 📓 monitors.conf
+│   │   ├── 📓 env.conf 
+│   │   ├── 📓 exec.conf
+│   │   ├── 📓 keybinds.conf
+│   │   └── 📓 hyprland.conf
+│   ├── 📁  nwg-look
+│   ├── 📁  Thunar
+│   └── 📁  wlogout
+📓 .gitconfig   
+📓 settings.json
+📓 .Xresources
+📓 starship.toml
+```
