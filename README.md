@@ -1,8 +1,8 @@
 ## What I'm using
 
-- **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland) A tiling Wayland compositor that doesn't sacrifice on its looks 🪟
+- **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland) [Bspwm](https://google.com) A tiling Wayland compositor that doesn't sacrifice on its looks 🪟
 - **Shell** • [Fish](https://fishshell.com/) With [Fisher](https://github.com/jorgebucaran/fisher), a plugin manager for Fish  🐚
-- **Terminal** • [Foot](https://codeberg.org/dnkl/foot) A fast, lightweight and customizable terminal 💻
+- **Terminal** • [Foot](https://codeberg.org/dnkl/foot) or [Kitty](https://sw.kovidgoyal.net/kitty/) A fast, lightweight and customizable terminal 💻
 - **Panel** • [Waybar](https://aur.archlinux.org/packages/waybar-hyprland-git) Highly customizable Wayland bar, now with workspaces support for Hyprland 📊
 - **Notify Daemon** • [Mako](https://github.com/emersion/mako) A lightweight notification daemon 📣
 - **Launcher** • [Wofi](https://github.com/uncomfyhalomacro/wofi) A window switcher, application launcher and dmenu replacement 🔍
