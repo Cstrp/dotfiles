@@ -15,7 +15,7 @@
 
 ### Workspace
 
-![workspaces](https://github.com/Cstrp/dotfiles/blob/main/assets/Screenshot1.png)
+![image](https://github.com/user-attachments/assets/c6bab648-fbfa-4001-a868-79fbbb27762c)
 
 ### Spotify + Cava
 
@@ -84,5 +84,5 @@
 | `$mainMod` + `CTRL` + `W` | Execute wallpaper-switcher script                          |
 | `$mainMod` + `B`         | Kill Waybar (SIGUSR1 signal)                                |
 | `$mainMod` + `Print`     | Take a screenshot                                           |
-| `$mainMod` + `CTRL` + `SHIFT` + `Print` | Take a delayed screenshot                    |
+| `$mainMod` + `SHIFT` + `Print` | Take a delayed screenshot                             |
 | `$mainMod` + `SHIFT` + `Print` | Take a screenshot of a selected area                  |
