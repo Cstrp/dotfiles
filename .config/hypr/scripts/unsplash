@@ -1,0 +1,75 @@
+#!/bin/bash
+
+config_file="$HOME/.config/.pixels_cfg"
+
+get_user_input() {
+	echo "Enter your API key (pexels): "
+	read -r api_key
+	echo "Enter ur prefer image genre, for example 'japan'"
+  echo "$api_key" > "$config_file"
+  echo "$query" >> "$config_file"
+}
+
+if [ ! -f "$config_file" ]; then
+  echo "Config file not found..."
+  get_user_input
+else
+  api_key=$(sed -n '1p' "$config_file")
+  query=$(sed -n '2p' "$config_file")
+fi
+
+while getopts "q:" opt; do
+  case $opt in
+    q)
+      query="$OPTARG"
+      echo "Image genre replaced to: $query"
+      sed -i "2s/.*/$query/" "$config_file"
+      ;;
+    *)
+      echo "Неправильный флаг: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+shift $((OPTIND-1))
+ 
+image_dir="$HOME/Pictures/wallpapers"
+current_time=$(date +"%Y-%m-%d_%H-%M-%S")
+image_path="$image_dir/$current_time.jpeg"
+
+query="dark"
+
+random_page=$(( ( RANDOM % 100 ) + 1 ))
+
+[ ! -d "$image_dir" ] && mkdir -p "$image_dir"
+
+find "$image_dir" -type f -mtime +1 -delete
+
+response=$(curl -s -H "Authorization: $api_key" "https://api.pexels.com/v1/search?query=${query}&per_page=1&page=${random_page}")
+image_url=$(echo "$response" | jq -r '.photos[0].src.original')
+
+if [ -z "$image_url" ] || [ "$image_url" == "null" ]; then
+  echo "Error: No image URL found!"
+  echo "Response: $response"
+  exit 1
+fi
+
+echo "Image URL: $image_url"
+
+curl -s -o "$image_path" "$image_url"
+
+if [ ! -s "$image_path" ]; then
+  echo "Error: Image not downloaded or file is empty!"
+  exit 1
+fi
+
+if [ -f "$image_path" ]; then
+  pidof swaybg && pkill swaybg
+
+  swaybg -m fill -i "$image_path"
+
+  echo "Changed wallpaper image successfully!"
+else
+  echo "Error: Image not found!"
+  exit 1
+fi

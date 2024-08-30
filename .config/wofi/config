@@ -1,0 +1,39 @@
+## Wofi Config
+
+## General
+show=drun
+prompt=
+normal_window=true
+layer=overlay
+term=foot
+columns=1
+
+## Geometry
+width=40%
+height=30%
+orientation=vertical
+dynamic_lines=true
+
+## Images
+allow_markup=true
+allow_images=true
+image_size=20
+
+## Search
+exec_search=false
+hide_search=false
+parse_search=true
+insensitive=false
+
+## Other
+hide_scroll=true
+always_parse_args=true
+no_actions=true
+print_command=true
+sort_order=default
+gtk_dark=true
+filter_rate=100
+insensitive=true
+
+## Keys
+key_exit=Escape

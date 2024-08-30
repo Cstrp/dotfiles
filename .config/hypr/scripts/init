@@ -1,0 +1,18 @@
+#!/bin/bash
+
+SCRIPTS_DIR="$HOME/.config/hypr/scripts"
+ 
+_ps=(waybar mako wofi swaync)
+for _prs in "${_ps[@]}"; do
+	if [[ $(pidof ${_prs}) ]]; then
+		killall -9 ${_prs}
+	fi
+done
+
+# Launch bar (waybar)
+${SCRIPTS_DIR}/waybar &
+
+# Lauch notification daemon (mako)
+# ${SCRIPTS_DIR}/notifications &
+
+

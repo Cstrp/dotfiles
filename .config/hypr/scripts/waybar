@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CONFIG="$HOME/.config/waybar/config.json"
+STYLES="$HOME/.config/waybar/style.css"
+
+if [[ ! $(pidof waybar) ]]; then
+	waybar --bar main-bar --log-level debug --config "$CONFIG" --style "$STYLES"
+fi

@@ -8,23 +8,13 @@ alias paclo='sudo pacman -Qdt'                               # list orphans
 alias pacro='sudo paclo && sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
 alias pacc='sudo pacman -Scc'                                # clean cache
 alias paclf='sudo pacman -Ql'                                # list files
-alias upd='paru -Syu'
-
+alias upd='sudo pacman -Sy && sudo powerpill -Su && paru -Su'
 
 # Replace ls with exa
-alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
-alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ls='lsd -a -X --color always --group-directories-first --icon auto' # preferred listing
+alias la='lsd -a --color always --group-directories-first --icon auto'  # all files and dirs
 alias ld 'ls -l | grep "^d"'
-alias ll='exa -l --color=always --group-directories-first --icons'  # long format
-
-if type -q exa 
-    alias l="lsd --date '+%d.%m.%Y %H:%M' -lah"
-    alias l.="exa -a | egrep '^\.'" 
-    alias la 'exa --long --all --group --header --binary --links --inode --blocks'
-    alias ld 'exa --long --all --group --header --list-dirs'
-    alias ll 'exa --long --all --group --header --git'
-    alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
-end
+alias ll='lsd -l --color always --group-directories-first --icon auto'  # long format
 
 # GITHUB
 alias g="git"

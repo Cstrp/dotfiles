@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-CONFIG="$HOME/.config/hypr/mako/config"
+CONFIG="$HOME/.config/mako/config"
 
 if [[ ! $(pidof mako) ]]; then
 	mako --config ${CONFIG}

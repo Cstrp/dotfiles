@@ -1,0 +1,28 @@
+{
+  "include": "~/.config/waybar/modules.json",
+  "output": "HDMI-A-2",
+  "layer": "top",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "bottom",
+  "spacing": 3,
+  "fixed-center": true,
+  "ipc": false,
+  "width": 1440,
+  "margin-top": 5,
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/spotify"
+  ],
+  "modules-center": [
+    "clock#1",
+    "clock#2",
+    "clock#3",
+    "custom/weather"
+  ],
+  "modules-right": [
+    "tray",
+    "custom/swaync",
+    "pulseaudio"
+  ]
+}

@@ -1,0 +1,41 @@
+* {
+	font-family: 'Lexend' sans-serif;
+	color: #ddd3e2;
+	background: transparent;
+}
+
+#window {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+
+#input {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+#outer-box {
+	padding: 20px;
+}
+
+#img {
+	margin-right: 6px;
+}
+
+#entry {
+	color: aliceblue;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+#entry:selected {
+	border: none;
+	color: #e5e9f0;
+	background: linear-gradient(90deg, #c0a3cf, transparent);
+}
+
+#text {
+	margin: 2px;
+}

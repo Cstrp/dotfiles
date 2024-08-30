@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CONFIG="$HOME/.config/tofi/configA"
+
+if [[ ! $(pidof tofi) ]]; then
+	tofi-drun -c ${CONFIG} --drun-launch=true
+else
+	pkill tofi
+fi
